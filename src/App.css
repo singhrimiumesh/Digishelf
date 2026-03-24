@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Syne:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f5f0e8;
+  --bg2: #ece6d9;
+  --gold: #8b5e1a;
+  --gold-light: #c9902e;
+  --text: #1a1510;
+  --muted: #7a6f63;
+  --border: rgba(139, 94, 26, 0.2);
+  --card: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }

@@ -1,0 +1,191 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: var(--bg);
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.25;
+}
+
+.orb1 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, #d4a85a, transparent);
+  top: -100px; left: -100px;
+}
+
+.orb2 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #c8b89a, transparent);
+  bottom: -80px; right: -80px;
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 3rem;
+}
+
+.brand-icon { font-size: 2rem; }
+
+.brand-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+.login-headline {
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.login-headline span { color: var(--gold); }
+
+.login-tagline {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.login-stats {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.stat { display: flex; flex-direction: column; gap: 0.2rem; }
+.stat strong { font-size: 1.6rem; color: var(--gold); font-family: 'Cormorant Garamond', serif; }
+.stat span { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.stat-divider { width: 1px; height: 40px; background: var(--border); }
+
+.login-right {
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid var(--border);
+}
+
+.login-card { width: 100%; }
+
+.login-card h2 {
+  font-size: 2.2rem;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.login-sub { color: var(--muted); margin-bottom: 2.5rem; font-size: 0.9rem; }
+
+.login-form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.field { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.field label { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.5px; text-transform: uppercase; }
+
+.field input {
+  background: rgba(139, 94, 26, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: 'Syne', sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field input:focus { border-color: var(--gold); }
+
+.login-error { color: #f87171; font-size: 0.85rem; }
+
+.login-btn {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background: var(--gold);
+  color: #080b12;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Syne', sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.login-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+.login-btn.loading { opacity: 0.6; cursor: wait; }
+
+.login-hint { text-align: center; color: var(--muted); font-size: 0.78rem; margin-top: 1.5rem; }
+
+/* Toggle between login / register */
+.login-toggle {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.toggle-btn:hover {
+  opacity: 0.8;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

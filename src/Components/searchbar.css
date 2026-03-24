@@ -1,0 +1,27 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(245, 200, 66, 0.3);
+  border-radius: 50px;
+  padding: 0.6rem 1.2rem;
+  gap: 0.6rem;
+  max-width: 480px;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.search-bar:focus-within {
+  border-color: #f5c842;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #eee;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.search-icon { font-size: 1rem; }

@@ -1,0 +1,63 @@
+export const featuredBooks = [
+  {
+    id: 1,
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    category: "Programming",
+    cover: "https://covers.openlibrary.org/b/id/8225261-L.jpg",
+    rating: 4.8,
+  },
+  {
+    id: 2,
+    title: "The Pragmatic Programmer",
+    author: "Andrew Hunt",
+    category: "Programming",
+    cover: "https://covers.openlibrary.org/b/id/8392282-L.jpg",
+    rating: 4.7,
+  },
+  {
+    id: 3,
+    title: "Introduction to Algorithms",
+    author: "Thomas H. Cormen",
+    category: "DSA",
+    cover: "https://covers.openlibrary.org/b/id/8269515-L.jpg",
+    rating: 4.9,
+  },
+  {
+    id: 4,
+    title: "Computer Networks",
+    author: "Andrew S. Tanenbaum",
+    category: "Networking",
+    cover: "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+    rating: 4.6,
+  },
+  {
+    id: 5,
+    title: "Database System Concepts",
+    author: "Abraham Silberschatz",
+    category: "Database",
+    cover: "https://covers.openlibrary.org/b/id/8432895-L.jpg",
+    rating: 4.5,
+  },
+  {
+    id: 6,
+    title: "Artificial Intelligence",
+    author: "Stuart Russell",
+    category: "AI/ML",
+    cover: "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+    rating: 4.8,
+  },
+];
+
+export const subjects = [
+  { id: "programming", label: "Programming", icon: "💻", count: 142, desc: "C, C++, Java, Python, JavaScript" },
+  { id: "dsa", label: "Data Structures & Algorithms", icon: "🧮", count: 87, desc: "Arrays, Trees, Graphs, Sorting" },
+  { id: "webdev", label: "Web Development", icon: "🌐", count: 96, desc: "HTML, CSS, React, Node.js" },
+  { id: "ai-ml", label: "AI & Machine Learning", icon: "🤖", count: 113, desc: "Neural Networks, Deep Learning, NLP" },
+  { id: "database", label: "Database Systems", icon: "🗄️", count: 64, desc: "SQL, MongoDB, PostgreSQL, Redis" },
+  { id: "networking", label: "Computer Networks", icon: "🔌", count: 58, desc: "TCP/IP, HTTP, DNS, Protocols" },
+  { id: "os", label: "Operating Systems", icon: "⚙️", count: 71, desc: "Linux, Process Management, Memory" },
+  { id: "cybersecurity", label: "Cybersecurity", icon: "🔐", count: 49, desc: "Ethical Hacking, Cryptography, OWASP" },
+  { id: "cloud", label: "Cloud Computing", icon: "☁️", count: 55, desc: "AWS, Azure, Docker, Kubernetes" },
+  { id: "mobile", label: "Mobile Development", icon: "📱", count: 43, desc: "Android, iOS, React Native, Flutter" },
+];
